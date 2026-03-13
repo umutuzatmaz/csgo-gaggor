@@ -1,0 +1,14 @@
+"Phrases"
+{
+	"gaggorCookieOff"
+	{
+		"tr"		"Gag'lı oyuncuların yazdıklarını görme: {red}Kapalı!"
+		"en"		"See what silenced players wrote: {red}Off!"
+	}
+
+	"gaggorCookieOn"
+	{
+		"tr"		"Gag'lı oyuncuların yazdıklarını görme: {green}Açık!"
+		"en"		"See what silenced players wrote: {green}On!"
+	}
+}
