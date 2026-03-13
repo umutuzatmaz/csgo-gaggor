@@ -22,9 +22,9 @@ Bir oyuncu gag'liyken mesaj yazdığında, eklenti o mesajı aktif adminlere şu
 
 ## Kurulum
 
-1. `gaggor.smx` dosyasını `csgo/addons/sourcemod/plugins/` klasörüne koy.
-2. `heni_gaggor.phrases.txt` dosyasını `csgo/addons/sourcemod/translations/` klasörüne koy.
-3. Sunucuyu yeniden başlat veya `sm plugins load gaggor` komutunu çalıştır.
+1. `gaggor.smx` dosyasını `csgo/addons/sourcemod/plugins/` klasörüne yükle.
+2. `heni_gaggor.phrases.txt` dosyasını `csgo/addons/sourcemod/translations/` klasörüne yükle.
+3. Sunucuyu yeniden başlat veya konsol aracılıyla `sm plugins load gaggor` komutunu çalıştır.
 
 ---
 
@@ -34,13 +34,13 @@ Bir oyuncu gag'liyken mesaj yazdığında, eklenti o mesajı aktif adminlere şu
 |---|---|---|
 | `sm_gaggor` | `ADMFLAG_GENERIC` (`b`) | GagGör bildirimlerini aç/kapat |
 
-> Sunucuya bağlanan `ADMFLAG_GENERIC` yetkisine sahip adminler, bildirimler **varsayılan olarak açık** gelir.  
-> `sm_gaggor` komutuyla istedikleri zaman kapatıp açabilirler.
+> Sunucuya bağlanan `ADMFLAG_GENERIC` yetkisine sahip adminler için bildirimler **varsayılan olarak açık** gelir.  
+> Bildirimleri görmek istemeyen adminler oyun içerisinden `sm_gaggor` / `!gaggor` komutuyla istedikleri zaman bildirimleri kapatıp açabilirler.
 
 ---
 
 ## Nasıl Çalışır?
 
-- Gag'li bir oyuncu `say` veya `say_team` komutuyla mesaj yazdığında eklenti devreye girer.
+- Gag'li bir oyuncu `say` veya `say_team` komutuyla yada sohbet alanına bir mesaj yazdığında eklenti devreye girer.
 - Mesaj, o an sunucuda bulunan ve bildirimleri açık olan tüm adminlere iletilir.
 - Normal oyuncular bu mesajları görmez; mesaj yalnızca adminlere görünür.
