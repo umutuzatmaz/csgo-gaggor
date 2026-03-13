@@ -22,7 +22,7 @@ public void OnPluginStart()
 	AddCommandListener(OnSayPlayer, "say");
 	AddCommandListener(OnSayPlayer, "say_team");
 	
-	LoadTranslations("henny_plugin_text.phrases");
+	LoadTranslations("heni_gaggor.phrases");
 }
 
 public void OnClientPutInServer(int client)
